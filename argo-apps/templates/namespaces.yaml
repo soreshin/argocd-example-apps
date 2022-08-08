@@ -4,6 +4,7 @@ metadata:
   name: helm-guestbook-1
   annotations:
     argocd.argoproj.io/sync-wave: "-2"
+    argocd.argoproj.io/hook: Sync
 ---
 apiVersion: v1
 kind: Namespace
@@ -11,6 +12,7 @@ metadata:
   name: helm-hooks-1
   annotations:
     argocd.argoproj.io/sync-wave: "-2"
+    argocd.argoproj.io/hook: Sync
 ---
 apiVersion: v1
 kind: Namespace
@@ -18,6 +20,7 @@ metadata:
   name: kustomize-guestbook-1
   annotations:
     argocd.argoproj.io/sync-wave: "-2"
+    argocd.argoproj.io/hook: Sync
 ---
 apiVersion: v1
 kind: Namespace
@@ -25,3 +28,4 @@ metadata:
   name: sync-waves-1
   annotations:
     argocd.argoproj.io/sync-wave: "-2"
+    argocd.argoproj.io/hook: Sync
